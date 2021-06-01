@@ -1,3 +1,10 @@
+:root {
+	--primary-color: #083358;
+	--secundary-color:  #0f4471;
+	--highlight-color: #fc3c3c;
+	--light-color: #f6f6f6;
+	--font-size: 1.6rem;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +13,7 @@
 
 html {
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 a {
@@ -18,8 +26,9 @@ a:hover {
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;	
-	background: #f2f2f2;
+	font-family: 'Noto Sans JP', sans-serif;	
+	font-size: var(--font-size);
+	background: var(--primary-color);
 }
 
 /* * ============================== */
@@ -27,28 +36,31 @@ body {
 /* * ============================== */
 
 .navbar {
-	background: #FFCD48;
+	background: var(--light-color);
 	position: sticky;
 	top: 0;
 }
 
 .navbar a {
-	color: #fff;
+	color: var(--primary-color);
 	display: inline-block;
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	text-align: center;
-	color: #000;
 	transition: .3s ease-out all;
 }
 
+.navbar .navbar__contenedor-contact {
+	color: var(--highlight-color);
+}
+
 .navbar a:hover {
-	background: #1D2F3D;
-	color: #fff;
+	background: var(--highlight-color);
+	color: var(--light-color);
 	text-decoration: none;
 }
 
-.contenedor {
+.navbar__contenedor {
 	max-width: 1000px;
 	width: 90%;
 	margin: auto;
@@ -83,18 +95,21 @@ main {
 main .contenido p {
 	margin-bottom: 20px;
 	line-height: 30px;
-	color: #525151;
+	color: var(--light-color);
 }
 
 main .contenido .titulo {
-    font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 	padding-top: 40px;
 }
 
-main .contenido .fecha {
-	font-size: 14px;
-	color: #B5B5B5;
+.titulo {
+	color: var(--light-color);
+}
+
+main .contenido {
+	font-size: 1.4rem;
+	color: var(--light-color);
 }
 
 /* * ============================== */
@@ -105,7 +120,7 @@ aside {
 	min-width: 30%;
 	margin: 40px 20px 20px 0;
 	height: 100%;
-	background: #1D2F3D;
+	background: var(--light-color);
 	padding: 20px;
 	border-radius: 3px;
 	position: sticky;
@@ -117,13 +132,13 @@ aside .titulo {
 	font-weight: normal;
 	font-size: 24px;
 	margin-bottom: 20px;
-	color: #f2f2f2;
+	color: var(--highlight-color);
 }
 
 aside .indice a {
 	display: block;
 	margin-bottom: 10px;
-	color: #FFCD48;
+	color: var(--secundary-color);
 }
 
 /* * ============================== */
@@ -139,7 +154,7 @@ footer .navbar {
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
 @media screen and (max-width: 900px){
-	.navbar .contenedor {
+	.navbar .navbar__contenedor {
 		flex-wrap: wrap;
 		margin: 0;
 		width: 100%;
@@ -154,7 +169,7 @@ footer .navbar {
 		height: 50vh;
 	}
 
-	main .contenedor {
+	main .navbar__contenedor {
 		flex-direction: column;
 	}
 
