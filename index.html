@@ -4,78 +4,115 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gustavo Gonzalez's Portfolio</title>
+	<meta name="description" content="Gustavo Gonzalez Engineer Programer Technology Specialist" />
+	<meta name="robots" content="index,follow" />
+	<title>Gustavo Gonzalez Engineer Programer Technology Specialist</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar">
+			<div class="navbar__contenedor-logo">
+				<a href="#">
+					<span class="navbar__contenedor-part1">ING</span>
+					<span class="navbar__contenedor-part2">Gustavo Gonzalez</span>
+				</a>
+			</div>
 			<div class="navbar__contenedor">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Work</a>
+				<a href="#about">About</a>
+				<a href="#work">Work</a>
 				<a href="#">Blog</a>
 				<a class="navbar__contenedor-contact" href="#">Contact</a>
 			</div>
 		</nav>
 		<section class="contenedor-imagen">
-			<a href="#blog">
-				<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="">
+			<a class="contenedor-link-imagen" href="#about">
+				<picture>
+					<source media="(min-width:1280px)" srcset="./Assets/ing-gustavo-gonzalez-code-big.jpg"/>
+					<source media="(min-width:960px)" srcset="./Assets/ing-gustavo-gonzalez-code-medium.jpg"/>
+					<img src="./Assets/ing-gustavo-gonzalez-code-small.jpg">
+				</picture>
 			</a>
+			<div>
+				<h2>Hi, I am <span class="contenedor-gustavo">Gustavo</span>.</h2> 
+				<h1><span class="contenedor-engineer">Engineer</span> Programmer & Tech Specialist</h1>
+				<h3>I'm a interdisciplinary and wide experienced engineer living in San Jose, Costa Rica 🇨🇷 who works for companies that want to grow their business.</h3>
+			</div>
+			<a class="contenedor-imagen-boton" href="#about">DISCOVER MORE ABOUT ME</a>
 		</section>
-	</header>
-	<main id="blog">
-		<div class="navbar__contenedor">
+		<secttion class="about" id="about">
+			<div>
+				<p>I'm an interdisciplinary engineer working at the heart of businesses, <span>technology</span> and <span>customers satisfaction</span>. Over the last decades, I've had the chance to help companies maintain, tune and resolve issues on their core information systems and their business processes. Not only at software level, but also marketing and customer positive experiences.</p>
+
+				<p>I started my career more than 20 years ago as a <span>programmer</span> when I was in a vocational high school, later I got graduated as a <span>system engineer</span> and started working for several IT companies locally in Costa Rica, but also multinational companies such as HP and Tek-Experts.</p> 
+			</div>
+		</secttion>
+	</header>	
+	<main id="work">
+		<div class="main__contenedor">
 			<aside>
-				<h3 class="titulo">Temas</h3>
+				<h3 class="titulo">My Work</h3>
 				<nav class="indice">
-					<a href="#articulo-1">Articulo #1</a>
-					<a href="#articulo-2">Articulo #2</a>
-					<a href="#articulo-3">Articulo #3</a>
-					<a href="#articulo-4">Articulo #4</a>
+					<a href="#work-1">Programming</a>
+					<a href="#work-2">Tech Specialist</a>
+					<a href="#work-3">Marketing</a>
+					<a href="#work-4">Back to code</a>
+					<a href="#work-5">Hardware</a>
+					<a href="#work-6">Next challenges</a>
 				</nav>
 			</aside>
 			<section class="contenido">
 				<section class="post">
-					<h1 class="titulo" id="articulo-1">Artículo #1</h1>
-					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque erat tincidunt hendrerit. Cras lobortis id diam sit amet consectetur. Suspendisse non pulvinar justo, ac commodo velit. Quisque maximus dolor ac magna molestie, sit amet commodo velit congue. Maecenas non dolor ut elit malesuada congue. Phasellus euismod nisi pharetra ante rutrum dignissim. Ut eget tortor ut sapien egestas sollicitudin. Aenean pulvinar varius augue, ac euismod tortor faucibus at. In commodo sodales turpis nec vehicula. Mauris luctus, risus non iaculis porttitor, felis eros sagittis enim, sed ultricies lacus magna quis urna.
-					</p>
+					<h1 class="titulo" id="work-1">Programming</h1>
+					<p class="subtitle">My beginnings: Cobol CA-IDMS VB Crystal Reports</p>
+					<p>I had the chance to explore several technologies in programming like Cobol, CA-IDMS, VB for several  years until becoming a <span>senior developer</span>.  I also had a <span>DB specialist</span> stage, focused on OLAP DB environments serving business intelligence systems such as SAP implemented in wide distributions following ITIL.</p>
 				</section>
 				<section class="post">
-					<h1 class="titulo" id="articulo-2">Artículo #2</h1>
-					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
-					<p>
-						Ut sit amet vehicula lectus, nec vestibulum purus. Nulla a nibh magna. Pellentesque commodo commodo sapien eu sagittis. Aenean luctus mauris sit amet quam ornare, eu ultricies nunc auctor. Nulla volutpat purus eu venenatis facilisis. Nulla risus nisl, rhoncus vitae pulvinar nec, viverra eu odio. Duis nisi quam, gravida sed imperdiet sed, viverra fermentum turpis. Cras non iaculis augue, nec scelerisque nibh. Sed auctor dolor mi, sit amet placerat tellus sagittis eu. Curabitur nec luctus dolor. Ut congue rutrum vehicula. Ut viverra tincidunt nunc, vitae cursus nulla scelerisque aliquam.
-					</p>
+					<h1 class="titulo" id="work-2">Tech Specialist</h1>
+					<p class="subtitle">SAP, Big Data & CRM</p>
+					<p>Later I worked <span>supporting Big Data software</span> for high level international customers including accounts for financial companies like KPMG and many others, where security and data integrity were as important as the data itself.</p>
 				</section>
 				<section class="post">
-					<h1 class="titulo" id="articulo-3">Artículo #3</h1>
-					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
-					<p>
-						Aliquam congue nibh in urna porta blandit. Mauris nec mi elit. Duis ligula quam, suscipit nec hendrerit ac, efficitur pulvinar tortor. Quisque venenatis leo ac hendrerit molestie. Quisque malesuada, enim ut feugiat finibus, sem mi faucibus enim, vel rhoncus ante justo in nibh. Duis sit amet ipsum tempus, pellentesque ex sed, mollis erat. Sed metus nibh, tincidunt vel laoreet eget, bibendum at est.
-					</p>
+					<h1 class="titulo" id="work-3">Marketing</h1>
+					<p class="subtitle">Improving sales and business processes</p>
+					<p>Recently, I have been working more on the <span>sales and marketing</span> spectrum, again supporting software like MS Dynamics CRM 365, but mostly as a <span>consulting</span> level improving business processes as well as the customer and user experiences.</p> 
 				</section>
 				<section class="post">
-					<h1 class="titulo" id="articulo-4">Artículo #4</h1>
-					<p class="fecha">Publicado el 4 de Marzo de 2021</p>
-					<p>
-						Nullam ullamcorper tincidunt laoreet. Donec sapien sapien, egestas id justo et, tincidunt accumsan ipsum. Etiam molestie lectus a consectetur condimentum. Donec malesuada at sapien eu viverra. Integer rutrum libero vitae est semper malesuada. Quisque convallis enim et erat aliquam, a facilisis nunc posuere. Nulla ultrices, turpis in pulvinar feugiat, dolor enim interdum mauris, vitae egestas purus orci vel nibh. Aliquam eleifend est ac eleifend dictum. Nunc condimentum tincidunt placerat. Praesent varius ornare quam vitae placerat. Donec justo sapien, pretium vitae vestibulum at, molestie eu ipsum. Proin non turpis eget risus egestas ornare in nec tortor. Sed commodo lectus vitae tortor blandit, id auctor mauris tempus. Aliquam erat volutpat.
-					</p>
+					<h1 class="titulo" id="work-4">Hardware</h1>
+					<p class="subtitle">Flirting with other technologies</p>
+					<p>I have also been flirting with <span>hardware technologies</span> like aerial Drones, sensors programming with Arduino and getting versed on IoT.</p>
+				</section>		
+				<section class="post">
+					<h1 class="titulo" id="work-5">Back to code</h1>
+					<p class="subtitle">Front-end developing JS/HTML5/CSS3 using Reach JS</p>
+					<p>Now I have been coming back to my <span>developer</span> facet, especially on web development with front end technologies.</p>
+				</section>		
+				<section class="post">
+					<h1 class="titulo" id="work-6">Next challenges</h1>
+					<p class="subtitle">My way to become a data scientist</p>
+					<p>And also been preparing myself to improve my skills for reaching a good level as <span>data scientist</span> which is one of my long term goals.</p>
 				</section>		
 			</section>
 		</div>
 	</main>
 	<footer>
-		<section class="contenedor-imagen">
-			<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+		<section class="contenedor-imagen ">
+			<a class="contenedor-link-imagen" href="#">
+				<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+			</a>
 		</section>
 		<nav class="navbar">
+			<div class="navbar__contenedor-logo">
+				<a href="#">
+					<span class="navbar__contenedor-part1">ING</span>
+					<span class="navbar__contenedor-part2">Gustavo Gonzalez</span>
+				</a>
+			</div>
 			<div class="navbar__contenedor">
-				<a href="#">Home</a>
 				<a href="#">About</a>
 				<a href="#">Work</a>
 				<a href="#">Blog</a>
