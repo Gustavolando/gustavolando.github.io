@@ -43,6 +43,7 @@ body {
 	position: sticky;
 	top: 0;
 	display: flex;
+	height: 5vh;
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: space-between;
@@ -55,8 +56,8 @@ body {
 .navbar a {
 	color: var(--light-color);
 	display: inline-block;
-	padding: 10px;
 	width: 100%;
+	margin: auto 0;
 	transition: .5s ease-out all;
 	text-align: center;
 }
@@ -92,7 +93,6 @@ body {
 .navbar__menu {
 	max-width: 1000px;
 	width: 50%;
-	/* margin-left: auto; */
 	display: flex;
 }
 
@@ -102,31 +102,35 @@ body {
 
 .cover {
   display: grid;
-	grid-template-columns: 8% 0.5fr 1fr 1fr;
-  grid-template-rows: 25% 1fr 10% 30%;
+	grid-template-columns: 40% 1.5fr 10%;
+  grid-template-rows: 25% 1fr 30%;
   gap: 5px;
-  height: 100vh;	
+  height: 95vh;	
 }
 
 .cover .cover__picture {
-	grid-column: 1 / 5;
-	grid-row: 1 / 5;
+	grid-column: 1 / 4;
+	grid-row: 1 / 4;
+	background-image: url("./Assets/about-ing-gustavo-gonzalez-color-big.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
 }
 
 .cover img {
 	height: 100vh;
 	width: 100vw;
-	vertical-align: top;
+	vertical-align: bottom;
 	object-fit: cover;
 	object-position: 0 50%;
 }
 
-.cover div {
+.cover .cover__desc {
 	padding: 5px;
-	grid-column: 2 / 4;
+	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	align-self: center;
-	background-color: rgba(0, 0, 127, 50%);
+	background-color: rgba(21, 20, 49, 80%);
 	border-radius: 5px;
 	color: var(--light-color);
 }
@@ -146,14 +150,13 @@ body {
 }
 
 .cover .cover-boton {
-	grid-column: 2 / 4;
-	grid-row: 3 / 4;
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--secundary-color);
+	margin-top: 10px;
 	padding: 10px;
+	display: inline-block;
 	border-radius: 5px;
-	color: var(--primary-color);
+	color: var(--secundary-color);
 	align-self: flex-start;
-	justify-self: flex-start;
 	text-decoration: none;
 }
 
@@ -232,12 +235,12 @@ main {
 	vertical-align: top;
 }
 
-.work-post__container:hover .work-team_img:hover {
+.work-post__container:hover .work-picture_img:hover {
 	transform: scale(1.4);
 	transition: .5s ease-out all;
 }
 
-.work-post__container:hover .work-team_img {
+.work-post__container:hover .work-picture_img {
 	transform: scale(1);
 	transition: .5s ease-out all;
 }
@@ -247,7 +250,7 @@ main {
 	width: 40vw;
 }	
 
-.work-team .work-team_img {
+.work-picture .work-picture_img {
 	height: 30vw;
 	border-radius: 20px;
 }	
