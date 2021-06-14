@@ -15,6 +15,7 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
+	width: 100vw;
 }
 
 a {
@@ -27,6 +28,7 @@ a:hover {
 }
 
 body {
+	width: 100vw;
 	font-size: var(--font-size);
 	background: var(--primary-color);
 }
@@ -43,9 +45,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
+	justify-content: space-between;
 }
 
-.navbar__contenedor-part1 {
+.navbar__logo-part1 {
 	font-family: 'Bangers', cursive;
 }
 
@@ -54,25 +57,25 @@ body {
 	display: inline-block;
 	padding: 10px;
 	width: 100%;
-	transition: .3s ease-out all;
+	transition: .5s ease-out all;
 	text-align: center;
 }
 
-.navbar .navbar__contenedor-logo {
+.navbar .navbar__logo {
 	color: var(--primary-color);
 	align-self: center;
 }
 
-.navbar .navbar__contenedor-part1 {
+.navbar .navbar__logo-part1 {
 	color: var(--highlight-color);
 	font-family: 'Bangers', cursive;
 }
 
-.navbar .navbar__contenedor-part2 {
+.navbar .navbar__logo-part2 {
 	color: var(--light-color);
 }
 
-.navbar .navbar__contenedor-contact {
+.navbar .navbar__menu-contact {
 	color: var(--highlight-color);
 }
 
@@ -82,14 +85,14 @@ body {
 	text-decoration: none;
 }
 
-.navbar .navbar__contenedor-logo a:hover {
+.navbar .navbar__logo a:hover {
 	background-color: var(--secundary-color);
 }
 
-.navbar__contenedor {
+.navbar__menu {
 	max-width: 1000px;
 	width: 50%;
-	margin-left: auto;
+	/* margin-left: auto; */
 	display: flex;
 }
 
@@ -97,7 +100,7 @@ body {
 /* * ===== CONTENEDOR IMAGEN ====== */
 /* * ============================== */
 
-.contenedor-imagen {
+.cover {
   display: grid;
 	grid-template-columns: 8% 0.5fr 1fr 1fr;
   grid-template-rows: 25% 1fr 10% 30%;
@@ -105,20 +108,20 @@ body {
   height: 100vh;	
 }
 
-.contenedor-imagen .contenedor-link-imagen {
+.cover .cover__picture {
 	grid-column: 1 / 5;
 	grid-row: 1 / 5;
 }
 
-.contenedor-imagen img {
-	width: 100%;
-	height: 100%;
+.cover img {
+	height: 100vh;
+	width: 100vw;
 	vertical-align: top;
 	object-fit: cover;
 	object-position: 0 50%;
 }
 
-.contenedor-imagen div {
+.cover div {
 	padding: 5px;
 	grid-column: 2 / 4;
 	grid-row: 2 / 3;
@@ -128,25 +131,21 @@ body {
 	color: var(--light-color);
 }
 
-.contenedor-imagen h2 span {
-	/* color: var(--highlight-color); */
-}
-
-.contenedor-imagen h1 {
+.cover .cover__desc-engineer {
 	font-size: 4rem;
 }
 
-.contenedor-imagen h1 span {
+.cover .cover__desc-engineer span {
 	background-color: var(--highlight-color);
 	color: var(--light-color);
 	padding: 0 3px;
 }
 
-.contenedor-imagen h3 {
+.cover .cover__desc-about {
 	color: var(--secundary-color);
 }
 
-.contenedor-imagen .contenedor-imagen-boton {
+.cover .cover-boton {
 	grid-column: 2 / 4;
 	grid-row: 3 / 4;
 	border: 1px solid var(--primary-color);
@@ -162,12 +161,10 @@ body {
 /* * =========== ABOUT ============ */
 /* * ============================== */
 
-.about {
-}
-
 .about div {
 	height: 100vh;
-	background-image: url('./Assets/about-ing-gustavo-gonzalez-medium.jpg');
+	/* background-image: url('./Assets/about-ing-gustavo-gonzalez-medium.jpg'); */
+	background-image: url('./Assets/about-ing-gustavo-gonzalez-color-big.jpg');
 	background-size: cover;
 	background-position-y: bottom;
 	background-repeat: no-repeat;
@@ -183,6 +180,7 @@ body {
 	font-size: 1.6rem;
 	padding: 5px;
 	border-radius: 5px;
+	line-height: 2.5rem;
 }
 
 .about span {
@@ -200,31 +198,83 @@ main {
 	min-height: 100vh;
 }
 
-.main__contenedor {
-	max-width: 1000px;
-	width: 50%;
+.work {
+	max-width: 1200px;
+	width: 100%;
 	margin: auto;
 	display: flex;
 }
 
-main .contenido p {
-	margin-bottom: 20px;
-	line-height: 30px;
+.work-content {
+	font-size: 1.6rem;
 	color: var(--light-color);
+	width: 100%;
+	overflow: scroll;
+	position: relative;
 }
 
-main .contenido .titulo {
+.work-post {
+	width: 100%;
+	overflow: scroll;
+	padding: 0 10px;
+	position: relative;
+}
+
+.work-post__container {
+	white-space: nowrap;
+	margin: 20px 0;
+}
+
+.work-post__item {
+	display: inline-block;
+	overflow: hidden;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.work-post__container:hover .work-team_img:hover {
+	transform: scale(1.4);
+	transition: .5s ease-out all;
+}
+
+.work-post__container:hover .work-team_img {
+	transform: scale(1);
+	transition: .5s ease-out all;
+}
+
+.work-desc {
+	white-space: normal;
+	width: 40vw;
+}	
+
+.work-team .work-team_img {
+	height: 30vw;
+	border-radius: 20px;
+}	
+
+.work-content .work-desc__title {
 	font-weight: normal;
-	padding-top: 40px;
 }
 
-.titulo {
+.work-content .work-desc__subtitle {
+	margin-top: 10px;
+	color: var(--secundary-color);
+	font-size: 1.6rem;
+}	
+
+.work-content p {
+	margin-top: 10px;
+	line-height: 2.5rem;
 	color: var(--light-color);
+}	
+
+.work-content p span {
+	color: var(--highlight-color);
 }
 
-main .contenido {
-	font-size: 1.4rem;
-	color: var(--light-color);
+.work-content .work-desk-slide {
+	padding: 1.8rem 0;
+	color: yellow;
 }
 
 /* * ============================== */
@@ -232,8 +282,8 @@ main .contenido {
 /* * ============================== */
 
 aside {
-	min-width: 30%;
-	margin: 40px 20px 20px 0;
+	min-width: 20%;
+	margin: 40px 20px 20px 20px;
 	height: 100%;
 	background: var(--light-color);
 	padding: 20px;
@@ -242,17 +292,21 @@ aside {
 	top: 20px;
 }
 
-aside .titulo {
+aside .work-index-title {
 	font-weight: normal;
 	font-size: 2.4rem;
 	margin-bottom: 20px;
 	color: var(--highlight-color);
 }
 
-aside .indice a {
+aside .work-index-nav a {
 	display: block;
 	margin-bottom: 10px;
-	color: var(--secundary-color);
+	color: var(--primary-color);
+}
+
+aside.work-index-title {
+	color: var(--light-color);
 }
 
 /* * ============================== */
@@ -265,10 +319,35 @@ footer .navbar {
 }
 
 /* * ============================== */
+/* * ========== WEBKIT ============ */
+/* * ============================== */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover {
+	background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* * ============================== */
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
 @media screen and (max-width: 960px){
-	.navbar .navbar__contenedor {
+	.navbar .navbar__menu {
 		width: auto;
 		justify-content: flex-start;
 	}
@@ -282,21 +361,21 @@ footer .navbar {
 		flex: 1;
 	}
 
-	.navbar .navbar__contenedor {
+	.navbar .navbar__menu {
 		justify-content: center;
 	}
 
-	.navbar .navbar__contenedor-logo .navbar__contenedor-part2 {
+	.navbar .navbar__logo .navbar__logo-part2 {
 		display: none;
 	}
 
-	.contenedor-imagen {
+	.cover {
 		height: 65vh;
 		grid-template-columns: 2% 0.5fr 1fr 2%;
 		grid-template-rows: 2% 1fr 2% 10%;
 	}
 
-	main .main__contenedor {
+	main .work {
 		flex-direction: column;
 		width: 90%;
 	}
@@ -309,7 +388,7 @@ footer .navbar {
 
 	.about div {
 		height: 60vh;
-		background-image: url('./Assets/about-ing-gustavo-gonzalez-small.jpg');
+		background-image: url('./Assets/about-ing-gustavo-gonzalez-color-small.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		padding: 2% 1% 2% 50%;
