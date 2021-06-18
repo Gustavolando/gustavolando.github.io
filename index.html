@@ -23,21 +23,14 @@
 				</a>
 			</div>
 			<div class="navbar__menu">
-				<a href="#about">About</a>
-				<a href="#work">Work</a>
-				<a href="#">Blog</a>
-				<a class="navbar__menu-contact" href="#">Contact</a>
+				<a href="#about"><p>About</p></a>
+				<a href="#background"><p>Work</p></a>
+				<!-- <a href="#"><p>Blog</p></a> -->
+				<a class="navbar__menu-contact" href="#"><p>Contact</p></a>
 			</div>
 		</nav>
 		<section class="cover">
-			<picture class="cover__picture">
-				<!-- <source media="(min-width:1280px)" srcset="./Assets/about-ing-gustavo-gonzalez-color-big.jpg"/>
-				<source media="(min-width:960px)" srcset="./Assets/about-ing-gustavo-gonzalez-color-medium.jpg"/>
-				<img src="./Assets/about-ing-gustavo-gonzalez-color-small.jpg"> -->
-				<!-- <source media="(min-width:1280px)" srcset="./Assets/ing-gustavo-gonzalez-code-big.jpg"/>
-				<source media="(min-width:960px)" srcset="./Assets/ing-gustavo-gonzalez-code-medium.jpg"/>
-				<img src="./Assets/ing-gustavo-gonzalez-code-small.jpg"> -->
-			</picture>
+			<div class="cover__picture"></div>
 			<div class="cover__desc">
 				<h2>Hi, I am Gustavo.</h2> 
 				<h1 class="cover__desc-engineer"><span>Engineer</span> Programmer & Tech Specialist</h1>
@@ -45,134 +38,146 @@
 				<a href="#about"><p class="cover-boton">DISCOVER MORE ABOUT ME</p></a>
 			</div>
 		</section>
-		<secttion class="about" id="about">
-			<div>
-				<p>I'm an interdisciplinary engineer working at the heart of businesses, <span>technology</span> and <span>customers satisfaction</span>. Over the last decades, I've had the chance to help companies maintain, tune and resolve issues on their core information systems and their business processes. Not only at software level, but also marketing and customer positive experiences.</p>
-
-				<p>I started my career more than 20 years ago as a <span>programmer</span> when I was in a vocational high school, later I got graduated as a <span>system engineer</span> and started working for several IT companies locally in Costa Rica, but also multinational companies.</p> 
+		<section class="about" id="about">
+			<div class="about__desciption">
+				<p>I'm an interdisciplinary engineer working at the heart of businesses: <span>technology</span> and <span>customers satisfaction</span>. Over the last decades, I've had the chance to help companies maintain, tune and resolve issues on their core information systems and their business processes. Not only at software level, but also marketing and customer relationship management.</p>
+				<p>I started my career more than 20 years ago as a <span>Programmer</span> after studying in a vocational high school.  Later I got graduated as a <span>System Engineer</span> and started working for several national and multination companies.</p> 
 			</div>
-		</secttion>
-	</header>	
-	<main>
-		<section class="work" id="work">
+		</section>
+		<section class="work" id="background">
 			<aside class="work-index">
-				<h3 class="work-index-title">My Work</h3>
+				<h3 class="work-index-title">My background</h3>
 				<nav class="work-index-nav">
-					<a href="#work-1">Programming</a>
-					<a href="#work-2">Tech Specialist</a>
-					<a href="#work-3">Marketing</a>
-					<a href="#work-4">Hardware</a>
-					<a href="#work-5">Back to code</a>
-					<a href="#work-6">Next challenges</a>
+					<a href="#work-1">Work</a>
+					<a href="#work-4">Projects</a>
+					<a href="#companies">Companies</a>
+					<a href="#teams">Teams</a>
 				</nav>
 			</aside>
 			<section class="work-content">
-				<section class="work-post" id="work-1">
-					<div class="work-post__container">
+				<section class="work-post-trayectory" id="work-1">
+					<div class="work-post-trayectory__container">
 						<div class="work-desc work-post__item">
-							<h1 class="work-desc__title">Programming</h1>
-							<h4 class="work-desc__subtitle">My beginnings: Desktop, Batch & Reporting apps</h4>
+							<h1 class="work-desc__title">My beginnings</h1>
+							<h4 class="work-desc__subtitle">Desktop, Batch & Reporting apps</h4>
 							<p>I had the chance to explore several technologies in programming like Cobol, CA-IDMS, VB with Crystal reports for several years until becoming a <span>senior developer</span> with vast experience in small, medium and big size projects.</p>
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/prog-Eprom.jpg" alt="Team EPROM CA-IDMS Cobol" class="work-picture_img" title="EPROM Team for CA-IDMS Cobol">
 						</div>
 					</div>
 				</section>
-				<section class="work-post" id="work-2">
-					<div class="work-post__container">
+				<section class="work-post-trayectory" id="work-2">
+					<div class="work-post-trayectory__container">
 						<div class="work-desc work-post__item">
 							<h1 class="work-desc__title">Tech Specialist</h1>
 							<h4 class="work-desc__subtitle">BW, Big Data & CRM</h4>
 							<p>I also had a <span>DB specialist</span> stage, focused on OLAP DB environments serving business intelligence systems such as SAP BW implemented following ITIL in wide infrastructure distributions.  Later I worked <span>supporting Big Data software</span> for high level international customers where security and data integrity were as important as the data itself. At least but not less I worked <span>supporting CRM software</span> like MS Dynamics CRM 365.</p>
 						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/ts-HP-PG.jpg" alt="Team BW Business Warehouse for P&G account" class="work-picture_img" title="SAP BW Team for P&G account">
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/ts-Idol-1.jpg" alt="Team IDOL first wave for HP account" class="work-picture_img" title="Autonomy IDOL Team first wave for HP account">
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/ts-Idol-2.jpg" alt="Team IDOL second wave for HP account" class="work-picture_img" title="Autonomy IDOL Team second wave for HP account">
-						</div>
 					</div>
 				</section>
-				<section class="work-post" id="work-3">
-					<div class="work-post__container">
+				<section class="work-post-trayectory" id="work-3">
+					<div class="work-post-trayectory__container">
 						<div class="work-desc work-post__item">
 							<h1 class="work-desc__title">Marketing</h1>
 							<h4 class="work-desc__subtitle">Sales, Business processes & Customer Experience</h4>
 							<p>Recently, I have been working more on the <span>sales and marketing</span> spectrum, mostly as a <span>consultant</span> improving business processes as well as the customer and user experiences.  I am using all my tech and business experience to make the social media and the digital presence of <span>companies grow</span>.</p>
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="" alt="" class="work-picture_img" title="">
 						</div>
 					</div>
 				</section>
 				<section class="work-post" id="work-4">
 					<div class="work-post__container">
 						<div class="work-desc work-post__item">
-							<h1 class="work-desc__title">Hardware</h1>
-							<h4 class="work-desc__subtitle">The pleasure of flirting with other technologies</h4>
-							<p>I have also been exploring hardware technologies like <span>aerial drones</span> in the different flavors they usually come, the way they are configured and how we can interact with them through code.  I also have projects exploring <span>sensors programming</span> with Arduino and I am trying to get more versed on IoT.  By the way, <span>3D printing</span> is my great ally here.</p>
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/hw-Arduino-leds.jpeg" alt="Arduino game Simon says with color LEDs" class="work-picture_img" title="Arduino game Simon says">
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/hw-Drones-Evento-Oxigeno.jpg" alt="Acodron and FPV Racing CR teams in event" class="work-picture_img" title="Acodron and FPV Racing CR teams in an event">
-						</div>
-						<div class="work-picture work-post__item" title="Promoting Covid-19 protection">
-							<iframe class="work-picture_img" src="https://www.youtube.com/embed/JQJiDuwQDVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-						<div class="work-picture work-post__item">
-							<img src="./Assets/hw-Ingeniero-imprimiendo.jpg" alt="Engineer using a 3D printer" class="work-picture_img" title="Engineer using a 3D printer">
-						</div>
-					</div>
-				</section>		
-				<section class="work-post" id="work-5">
-					<div class="work-post__container">
-						<div class="work-desc work-post__item">
-							<h1 class="work-desc__title">Back to code</h1>
+							<h1 class="work-desc__title">Recent projects</h1>
 							<h4 class="work-desc__subtitle">Front-end Developer JS, HTML5 & CSS3</h4>
 							<p>Now I have been coming back to my developer facet, especially on <span>front-end development</span> and again, using all my tech, business and marketing experience to make my customers grow even higher.</p>
-							<h3 class="work-desk-slide"><<< Slide this aside to see my recent projects <<<</h3>
+							<h3 class="work-desk-slide"><<< Slide this aside <<<</h3>
 						</div>
 						<div class="work-picture work-post__item">
-							<img src="./Assets/btc-platzi-comic-vol-1.png" alt="Comic CSS Responsive with Platzi professors" class="work-picture_img" title="Comic CSS Responsive">
+							<img src="https://i.ibb.co/mcyVcp0/btc-platzi-comic-vol-1.png" alt="Comic CSS Responsive with Platzi professors" class="work-picture_img" title="Comic CSS Responsive">
 						</div>
 						<div class="work-picture work-post__item">
-							<img src="./Assets/btc-customer-satisfaction-slider.png" alt="Customer satisfaction slider friendlier" class="work-picture_img" title="Customer satisfaction slider friendlier">
+							<img src="https://i.ibb.co/J77ZHr0/btc-customer-satisfaction-slider.png" alt="Customer satisfaction slider friendlier" class="work-picture_img" title="Customer satisfaction slider friendlier">
 						</div>
 						<div class="work-picture work-post__item">
-							<img src="./Assets/btc-clip-path-mask-1.png" alt="CSS Clip-path mask exercise" class="work-picture_img" title="CSS Clip-path mask exercise">
+							<img src="https://i.ibb.co/9g7Gb12/btc-guitacam-game.png" alt="Game made for Al Escenario restaurant" class="work-picture_img" title="Game made for Al Escenario restaurant">
 						</div>
 						<div class="work-picture work-post__item">
-							<img src="./Assets/btc-clip-path-mask-2.png" alt="another CSS Clip-path mask exercise" class="work-picture_img" title="CSS Clip-path mask exercise 2">
+							<img src="https://i.ibb.co/N7TQvrg/btc-clip-path-mask-1.png" alt="CSS Clip-path mask exercise" class="work-picture_img" title="CSS Clip-path mask exercise">
+						</div>
+						<div class="work-picture work-post__item">
+							<img src="https://i.ibb.co/WGHWr4R/btc-clip-path-mask-2.png" alt="another CSS Clip-path mask exercise" class="work-picture_img" title="CSS Clip-path mask exercise 2">
 						</div>
 					</div>
 				</section>
-				<section class="work-post" id="work-6">
+				<section class="work-post" id="work-5">
 					<div class="work-post__container">
 						<div class="work-desc work-post__item">
-							<h1 class="work-desc__title">Next challenges</h1>
-							<h4 class="work-desc__subtitle">My way to become a data scientist</h4>
-							<p>And also been preparing myself to improve my skills for reaching a good level as <span>data scientist</span> which is one of my long term goals.</p>
+							<h1 class="work-desc__title">IoT</h1>
+							<h4 class="work-desc__subtitle">Exploring Internet of Things</h4>
+							<p>I have also been exploring hardware technologies like <span>aerial drones</span> in the different flavors they usually come, the way they are configured and how we can interact with them through code.  I also have projects exploring <span>sensors programming</span> with Arduino and I am trying to get more versed on IoT.  By the way, <span>3D printing</span> is my great ally here.</p>
+							<h3 class="work-desk-slide"><<< Slide this aside <<<</h3>
 						</div>
 						<div class="work-picture work-post__item">
-							<img src="" alt="" class="work-picture_img" title="">
+							<iframe class="work-picture_video" width="560" height="315" src="https://www.youtube.com/embed/KqSTspuWy4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>		
+				<section class="companies" id="companies">
+					<div class="companies__container">
+						<div><img src="https://i.ibb.co/5K7xCVp/logo-e.png" alt="Empresa de Profesionales Modernos"></div>
+						<div><img src="https://i.ibb.co/gjhm40f/logo-hp.png" alt="Hewlett Packard"></div>
+						<div><img src="https://i.ibb.co/2sCsctK/logo-te.png" alt="Tek Experts"></div>
+						<div><img src="https://i.ibb.co/fd78VB0/logo-ice.png" alt="Instituto Costarricense de Electricidad"></div>
+						<div><img src="https://i.ibb.co/nfWqBYt/logo-pg.png" alt="Procter & Gamble"></div>
+						<div><img src="https://i.ibb.co/0J9q5K6/logo-hpe.png" alt="Hewlett Packard Enterprise"></div>
+						<div><img src="https://i.ibb.co/92ghThh/logo-ms.png" alt="Microsoft"></div>
+						<div><img src="https://i.ibb.co/tqhnszJ/logo-gc.png" alt="Guitacam"></div>
+						<div><img src="https://i.ibb.co/vjnqyzV/logo-ae.png" alt="Al Escenario"></div>
+						<div><img src="https://i.ibb.co/R3xBk69/logo-sd.png" alt="Super Drone CR"></div>
+						<div><img src="https://i.ibb.co/cc9yHhS/logo-tp.png" alt="Tico Print 3D"></div>
+					</div>
+				</section>
+				<section class="teams work-post" id="teams">
+					<div class="work-post__container">
+						<div class="work-picture work-post__item">
+							<img src="https://i.ibb.co/2N3VxpR/prog-Eprom.jpg" alt="Team EPROM CA-IDMS Cobol" class="work-picture_img" title="EPROM Team for CA-IDMS Cobol">
+							<figcaption>Me with the Eprom team</figcaption>
+						</div>
+						<div class="work-picture work-post__item">
+							<img src="https://i.ibb.co/J2P8QTJ/ts-HP-PG.jpg" alt="HP Team BW Business Warehouse for P&G account" class="work-picture_img" title="SAP BW Team for P&G account">
+							<figcaption>Me with the HP BW team</figcaption>
+						</div>
+						<div class="work-picture work-post__item">
+							<img src="https://i.ibb.co/27W6dcx/ts-Idol-1.jpg" alt="Team IDOL first wave for HP account" class="work-picture_img" title="Autonomy IDOL Team first wave for HP account">
+							<figcaption>Me with the Tek Experts' IDOL team</figcaption>
+						</div>
+						<div class="work-picture work-post__item">
+							<img src="https://i.ibb.co/CnxZ1rd/ts-Idol-2.jpg" alt="Team IDOL second wave for HP account" class="work-picture_img" title="Autonomy IDOL Team second wave for HP account">
+							<figcaption>Me with the Tek Experts' IDOL team</figcaption>
+						</div>
+					</div>
+				</section>
 			</section>
 		</section>
+	</header>	
+	<main>
+
+						<!-- <div class="work-picture work-post__item">
+							<img src="./Assets/hw-Ingeniero-imprimiendo.jpg" alt="Me using a 3D printer" class="work-picture_img" title="Me using a 3D printer">
+						</div> -->
+						<!-- <div class="work-desc work-post__item">
+							<h1 class="work-desc__title">Next challenges</h1>
+							<h4 class="work-desc__subtitle">My way to become a data scientist</h4>
+							<p>And also been preparing myself to improve my skills for reaching a good level as <span>data scientist</span> which is one of my long term goals.</p>
+						</div> -->
+						<!-- <div class="work-picture work-post__item" title="Promoting Covid-19 protection">
+							<iframe class="work-picture_video" width="560" height="315" src="https://www.youtube.com/embed/JQJiDuwQDVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+						</div> -->
 	</main>
 	<footer>
-		<section class="cover ">
+		<!-- <section class="cover ">
 			<a class="cover__picture" href="#">
 				<img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
 			</a>
-		</section>
+		</section> -->
 		<nav class="navbar">
 			<div class="navbar__logo">
 				<a href="#">
@@ -181,10 +186,10 @@
 				</a>
 			</div>
 			<div class="navbar__menu">
-				<a href="#about">About</a>
-				<a href="#work">Work</a>
-				<a href="#">Blog</a>
-				<a class="navbar__menu-contact" href="#">Contact</a>
+				<a href="#about"><p>About</p></a>
+				<a href="#work"><p>Work</p></a>
+				<!-- <a href="#"><p>Blog</p></a> -->
+				<a class="navbar__menu-contact" href="#"><p>Contact</p></a>
 			</div>
 		</nav>
 	</footer>
