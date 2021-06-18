@@ -281,8 +281,9 @@ main {
 
 .teams h1 {
 	padding-top: 40px;
+	padding-left: 5px;
 	color: var(--light-color);
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 /* * ============================== */
@@ -327,8 +328,9 @@ aside.work-index-title {
 
 .companies h1 {
 	padding-top: 40px;
+	padding-left: 5px;
 	color: var(--primary-color);
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .companies__container {
