@@ -67,7 +67,7 @@ body {
 	align-self: center;
 }
 
-.navbar .navbar__logo-part1 {
+.navbar .navbar__logo-part1, .reference__ING {
 	color: var(--highlight-color);
 	font-family: 'Bangers', cursive;
 }
@@ -234,6 +234,11 @@ main {
 	vertical-align: top;
 }
 
+.work-post__item a {
+	color: var(--light-color);
+	text-decoration: none;
+}
+
 /* .work-post__container:hover .work-picture_img:hover {
 	transform: scale(1.4);
 	transition: .5s ease-out all;
@@ -251,7 +256,7 @@ main {
 
 .work-picture .work-picture_img, .work-picture .work-picture_video {
 	height: 30vw;
-	border-radius: 20px;
+	border-radius: 5px;
 }	
 
 .work-content .work-desc__title {
@@ -279,11 +284,33 @@ main {
 	color: yellow;
 }
 
+/* * ============================== */
+/* * ============ TEAMS =========== */
+/* * ============================== */
+
 .teams h1 {
 	padding-top: 40px;
-	padding-left: 5px;
+	padding-left: 15px;
 	color: var(--light-color);
 	font-size: 2rem;
+}	
+
+/* * ============================== */
+/* * ========= REFERENCES ========= */
+/* * ============================== */
+
+.work__reference-position {
+	color: var(--secundary-color);
+	text-align: right;
+	padding-right: 10px;
+}
+
+.work__reference-text {
+	white-space: normal;
+}
+
+.references__row:first-child {
+	margin-bottom: 40px;
 }
 
 /* * ============================== */
@@ -296,7 +323,7 @@ aside {
 	height: 100%;
 	background: var(--light-color);
 	padding: 20px;
-	border-radius: 3px;
+	border-radius: 5px;
 	position: sticky;
 	top: 50px;
 }
@@ -328,7 +355,7 @@ aside.work-index-title {
 
 .companies h1 {
 	padding-top: 40px;
-	padding-left: 5px;
+	padding-left: 15px;
 	color: var(--primary-color);
 	font-size: 2rem;
 }
@@ -410,9 +437,6 @@ aside.work-index-title {
 	align-items: center;	
 }
 
-.contact iframe {
-	overflow-y: hidden;
-}
 
 /* * ============================== */
 /* * ========== FOOTER ============ */
@@ -434,7 +458,6 @@ footer .navbar {
 
 ::-webkit-scrollbar {
 	width: 0px;
-  /* height: 6px; */
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
@@ -604,4 +627,9 @@ footer .navbar {
 		grid-column: 2 / 3;
 		grid-row: 6 / 7;
 	}
+
+	.work__reference-position {
+		text-align: left;
+	}
+	
 }
