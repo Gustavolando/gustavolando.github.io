@@ -1,3 +1,6 @@
 *.txt
 .DS_Store
-/Assets
+/Assets/*.png
+/Assets/*.jpeg
+/Assets/*.jpg
+/Assets/tinified
