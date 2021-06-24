@@ -208,7 +208,7 @@ body {
 }
 
 .work-post-trayectory__container {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .work-post {
@@ -219,7 +219,7 @@ body {
 }	
 
 .work-post__container {
-	margin: 40px 0;
+	margin: 20px 0;
 	white-space: nowrap;
 }
 
@@ -278,6 +278,7 @@ body {
 .work-content .work-desk-slide {
 	padding: 1.8rem 0;
 	color: yellow;
+	display: none;
 }
 
 /* * ============================== */
@@ -285,7 +286,7 @@ body {
 /* * ============================== */
 
 .teams h1 {
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-left: 15px;
 	color: var(--light-color);
 	font-size: 2rem;
@@ -324,13 +325,13 @@ body {
 
 aside {
 	min-width: 20%;
-	margin: 40px 20px 40px 20px;
+	margin: 20px;
 	height: 100%;
 	background: var(--light-color);
 	padding: 20px;
 	border-radius: 5px;
 	position: sticky;
-	top: 50px;
+	top: 20px;
 }
 
 aside .work-index-title {
@@ -350,6 +351,18 @@ aside.work-index-title {
 	color: var(--light-color);
 }
 
+aside p {
+	margin-top: 20px;
+	padding: 20px ;
+	text-align: center;
+	background: var(--primary-color);
+	color: var(--light-color);
+	border-radius: 5px;
+}
+
+aside a {
+	text-decoration: none;
+}
 /* * ============================== */
 /* * ========= COMPANIES ========== */
 /* * ============================== */
@@ -359,7 +372,7 @@ aside.work-index-title {
 }
 
 .companies h1 {
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-left: 15px;
 	color: var(--primary-color);
 	font-size: 2rem;
@@ -454,7 +467,7 @@ main {
 	position: relative;
 	left: -10vw;
 	color: var(--light-color);
-	text-shadow: 2px 2px 5px var(--highlight-color);
+	/* text-shadow: 2px 2px 5px var(--secundary-color); */
 	font-size: 3rem;
 	background-color: rgba(21, 20, 49, 70%);
 	padding: 4px 4px 8px 4px;
@@ -486,7 +499,7 @@ main {
 
 .contact__message p {
 	color: var(--light-color);
-	text-shadow: 2px 2px 5px var(--highlight-color);
+	text-shadow: 2px 2px 5px var(--primary-color);
 	padding-left: 5px;
 }
 
@@ -527,7 +540,6 @@ main {
   width: 10vh;
 	height: 10vh;
   text-align: center;
-  text-decoration: none;
 }
 
 .fa:hover {
@@ -561,7 +573,6 @@ main {
 }
 
 .fa-instagram {
-	/* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
 	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
   color: white;
 }
@@ -676,6 +687,11 @@ footer .navbar {
 		width: 100%;
 	}
 
+	.work-content .work-desk-slide {
+		text-align: center;
+		display: block;
+	}
+
 	.work-desc {
 		width: 95%;
 	}	
@@ -785,7 +801,7 @@ footer .navbar {
 	.contact {
 		background-image: url("https://i.ibb.co/JH6sdY2/contact-ing-gustavo-gonzalez-small.jpg");
 		justify-content: flex-end;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	.contact__container {
@@ -800,13 +816,47 @@ footer .navbar {
 	}
 
 	.contact__cta {
+		/* background-color: var(--primary-color); */
 		position: relative;
 		left: 0;
 		font-size: 2.5rem;
+		max-width: 100%;
+	}
+
+	.contact__cta p:last-child {
+		padding-top: 5px;
+		color: var(--secundary-color);
 	}
 
 	.contact__message p {
 		font-size: 1.4rem;
 		padding-right: 5px;
+	}
+}
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+	.fa {
+		font-size: 5vh;
+		width: 10vh;
+		height: 10vh;
+	}
+	
+	.contact {
+		flex-wrap: wrap;
+	}
+
+	.contact__container {
+		order: 2;
+	}
+	
+	.contact__cta {
+		order: 1;
+		margin-top: auto;
+		margin-bottom: auto;
+		max-width: 60vw;
+	}
+
+	.contact__message p {
+		font-size: 1rem;
 	}
 }
