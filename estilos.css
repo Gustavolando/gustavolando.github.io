@@ -253,6 +253,8 @@ body {
 .work-picture .work-picture_img, .work-picture .work-picture_video {
 	height: 30vw;
 	border-radius: 5px;
+	/* margin-left: auto;
+	margin-right: auto; */
 }	
 
 .work-content .work-desc__title {
