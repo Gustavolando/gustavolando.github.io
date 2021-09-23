@@ -237,16 +237,6 @@ body {
 	text-decoration: none;
 }
 
-/* .work-post__container:hover .work-picture_img:hover {
-	transform: scale(1.4);
-	transition: .5s ease-out all;
-}
-
-.work-post__container:hover .work-picture_img {
-	transform: scale(1);
-	transition: .5s ease-out all;
-} */
-
 .work-desc {
 	white-space: normal;
 	width: 40vw;
@@ -268,6 +258,15 @@ body {
 	color: var(--highlight-color);
 	font-size: 1.6rem;
 }	
+
+.work-desc-repository {
+	height: 30px;
+}
+
+#repo-link, #site-link {
+	text-decoration: var(--highlight-color);
+	color: var(--highlight-color);
+}
 
 .work-content p {
 	margin-top: 10px;
