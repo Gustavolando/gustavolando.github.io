@@ -100,6 +100,10 @@ body {
 /* * ============================== */
 /* * ===== CONTENEDOR IMAGEN ====== */
 /* * ============================== */
+.cover .cover__desc h2 {
+  position: relative;
+  z-index: 10;
+}
 
 .cover {
   height: 100vh;	
@@ -120,15 +124,44 @@ body {
 }
 
 .cover .cover__desc {
-	padding: 5px;
+	padding: 15px;
 	align-self: center;
 	background-color: rgba(21, 20, 49, 80%);
-	border-radius: 5px;
 	color: var(--light-color);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.cover .cover__desc::before {
+	content: '';
+  position: absolute;
+  width: 130%;
+	left: -15%;
+	top: calc(50% - 70px);
+  height: 140px;
+  background: linear-gradient(to right, var(--light-color), var(--highlight-color));
+  animation: animate 10s linear infinite;
+}
+.cover .cover__desc::after {
+  content: '';
+  position: absolute;
+  background: #0e1538;
+  inset: 4px;
+  border-radius: 16px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .cover .cover__desc-engineer {
 	font-size: 4rem;
+	position: relative;
+	z-index: 10;
 }
 
 .cover .cover__desc-engineer span {
@@ -140,6 +173,8 @@ body {
 
 .cover .cover__desc-about {
 	color: var(--secundary-color);
+	position: relative;
+	z-index: 10;
 }
 
 .cover .cover-boton {
@@ -152,6 +187,8 @@ body {
 	align-self: flex-start;
 	text-decoration: none;
 	text-shadow: none;
+	position: relative;
+	z-index: 10;
 }
 
 /* * ============================== */
