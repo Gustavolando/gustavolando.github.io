@@ -48,6 +48,7 @@ body {
 	align-content: center;
 	justify-content: space-between;
 	align-items: stretch;
+	z-index: 1001;
 }
 
 .navbar__logo-part1 {
@@ -98,7 +99,7 @@ body {
 }
 
 /* * ============================== */
-/* * ===== CONTENEDOR IMAGEN ====== */
+/* * ===== CONTENEDOR COVER ======= */
 /* * ============================== */
 .cover .cover__desc h2 {
   position: relative;
@@ -139,7 +140,7 @@ body {
 	left: -15%;
 	top: calc(50% - 70px);
   height: 140px;
-  background: linear-gradient(to right, var(--light-color), var(--highlight-color));
+  background: linear-gradient(to right, var(--light-color), var(--light-color), var(--highlight-color), var(--highlight-color));
   animation: animate 10s linear infinite;
 }
 .cover .cover__desc::after {
@@ -149,15 +150,6 @@ body {
   inset: 4px;
   border-radius: 16px;
 }
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .cover .cover__desc-engineer {
 	font-size: 4rem;
 	position: relative;
@@ -182,7 +174,7 @@ body {
 	margin-top: 10px;
 	padding: 10px;
 	display: inline-block;
-	border-radius: 5px;
+	border-radius: 10px;
 	color: var(--secundary-color);
 	align-self: flex-start;
 	text-decoration: none;
@@ -201,19 +193,49 @@ body {
 	background-size: cover;
 	background-position-y: bottom;
 	background-repeat: no-repeat;
-	padding: 5% 50% 10% 15%;
+	padding: 5% 50% 10% 10%;
 	display: flex;
 	flex-direction: column;	
 	justify-content: center;
+	position: relative;
 }
 
 .about__desciption {
 	background-color: rgba(21, 20, 49, 70%);
 	border-radius: 5px;
-	padding: 5px;
+	padding: 15px;
+	width: 100%;
 	color: var(--light-color);
 	font-size: 2rem;
 	line-height: 2.5rem;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*.about__desciption::before {
+	content: '';
+  position: absolute;
+  width: 140px;
+	top: -20%; /* 50% - (height / 2) 
+	left: calc(50% - 70px);
+  height: 140%;
+  background: linear-gradient(to bottom, var(--light-color), var(--light-color), var(--highlight-color), var(--highlight-color));
+  animation: animate 10s linear infinite;
+}*/
+
+/* .about__desciption::after {
+	content: '';
+  position: absolute;
+	background-color: rgba(21, 20, 49, 70%);
+  background: var(--primary-color);
+  inset: 4px;
+  border-radius: 16px;
+	z-index: 1;
+} */
+
+.about__desciption p {
+	z-index: 10;
 }
 
 .about span {
@@ -900,4 +922,12 @@ footer .navbar {
 	.contact__message p {
 		font-size: 1rem;
 	}
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
