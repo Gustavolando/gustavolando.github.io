@@ -667,6 +667,7 @@ main {
 		max-width: 100%;
 		margin: 0;
 		padding: 5px;
+		align-self: center;
 	}
 
 	.contact__cta p:last-child {
