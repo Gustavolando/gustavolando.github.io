@@ -39,7 +39,6 @@ body {
 /* * ============================== */
 
 .navbar {
-	/* background: linear-gradient(to bottom, var(--secundary-color), var(--primary-color)); */
 	background: var(--primary-color);
 	position: sticky;
 	top: 0;
@@ -107,7 +106,7 @@ body {
 }
 
 .cover {
-  height: 100vh;	
+  height: calc(100vh - 3.8rem);	
 	display: flex;
 	background-image: url("https://i.ibb.co/d5tz7TZ/ing-gustavo-gonzalez-color-big.jpg");
 	background-repeat: no-repeat;
@@ -117,7 +116,7 @@ body {
 }
 
 .cover img {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	vertical-align: bottom;
 	object-fit: cover;
@@ -333,7 +332,6 @@ body {
 }	
 
 .work-content p span {
-	/* color: var(--highlight-color); */
 	color: var(--light-color-span);
 }
 
@@ -410,28 +408,6 @@ aside {
 	overflow: hidden;
 }
 
-/* .work-index::before {
-	content: '';
-  position: absolute;
-  height: 140%;
-	top: -15%;
-	left: calc(50% - 70px);
-  width: 140px;
-  background: linear-gradient(to bottom, var(--secundary-color), var(--secundary-color), var(--highlight-color), var(--highlight-color));
-  animation: animate 10s linear infinite;
-	z-index: 0;
-} 
-
-.work-index::after {
-	content: '';
-  position: absolute;
-	background-color: rgba(21, 20, 49, 70%);
-  background: var(--light-color);
-  inset: 4px;
-  border-radius: 16px;
-	z-index: 1;
-} */
-
 aside .work-index-title {
 	position: relative;
 	z-index: 10;
@@ -451,12 +427,6 @@ aside .work-index-nav a {
 	margin-bottom: 10px;
 	color: var(--primary-color);
 }
-
-/* aside .work-index-title {
-	position: relative;
-	z-index: 10;
-	color: var(--light-color);
-} */
 
 aside p {
 	position: relative;
@@ -505,6 +475,12 @@ aside a {
 .companies__container img {
 	width: 20vw;
 	height: 20vw;
+	filter: grayscale(100%);
+	transition: 0.3s;
+}
+
+.companies__container img:hover {
+	filter: grayscale(0);
 }
 
 .companies__container div:nth-child(1) {
@@ -561,50 +537,40 @@ aside a {
 
 main {
 	min-height: 100vh;
+	width: 100%;
 }
 
 .contact {
   height: 100vh;	
-	display: flex;
-	align-items: center;
+	min-height: 100vh;
 	background-image: url("https://i.ibb.co/JH6sdY2/contact-ing-gustavo-gonzalez-big.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: right;
 }
 
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+  background: transparent;
+  flex-direction: column;
+}
 .contact__cta  {
-	position: relative;
-	left: -10vw;
+  position: relative;
+  margin-left: 10vh;
+	margin-top: 20%;
+	padding: 5px;
+	align-self: flex-start;
 	color: var(--light-color);
-	/* text-shadow: 2px 2px 5px var(--secundary-color); */
 	font-size: 3rem;
 	background-color: rgba(21, 20, 49, 70%);
-	padding: 4px 4px 8px 4px;
 	max-width: 40vw;
-}
-
-.contact__container {
-	display: flex;
-	flex-direction: column;	
-	align-items: flex-start;
-	justify-content: center;
-	text-align: center;
-}
-
-.contact_socialnetwork {
-	align-self: center;
-}
-
-.contact__socialnetwork img {
-	height: 39vh;
-}
-
-.contact__container a {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-decoration: none;
+	opacity: 1;
+  transition: 0.5s;
 }
 
 .contact__message p {
@@ -613,94 +579,6 @@ main {
 	padding-left: 5px;
 }
 
-.contact__container div:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-}
-.contact__container div:nth-child(2) {
-	grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-.contact__container div:nth-child(3) {
-	grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-.contact__container div:nth-child(4) {
-	grid-column: 4 / 5;
-  grid-row: 1 / 2;
-}
-.contact__container div:nth-child(5) {
-	grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-.contact__container div:nth-child(6) {
-	grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-.contact__container div:nth-child(7) {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-}
-
-.fa {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  font-size: 5vh;
-  width: 10vh;
-	height: 10vh;
-  text-align: center;
-}
-
-.fa:hover {
-	text-decoration: none;
-	opacity: 0.7;
-}
-
-.fa-github {
-  background: #000000;
-  color: white;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #1DA1F2;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #0072b1;
-  color: white;
-}
-
-.icon-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  color: white;
-}
-
-.fa-envelope {
-	background: white;
-	color: 	#c71610;
-}
-
-.fa-whatsapp {
-	background: #25D366;
-	color: white;
-}
-
-.icon-tiktok {
-	background: black;
-	color: white;
-}
 /* * ============================== */
 /* * ========== FOOTER ============ */
 /* * ============================== */
@@ -780,10 +658,6 @@ footer .navbar {
 	.cover .cover__desc {
 		background-color: transparent;
 		text-shadow: 2px 2px 4px var(--primary-color);
-	}
-
-	.cover .cover-boton {
-		/* margin-bottom: 30px; */
 	}
 
 	aside {
@@ -902,35 +776,17 @@ footer .navbar {
 		text-align: left;
 	}
 	
-	.fa {
-		font-size: 10vw;
-		width: 15vw;
-		height: 15vw;
-	}
-	
 	.contact {
 		background-image: url("https://i.ibb.co/JH6sdY2/contact-ing-gustavo-gonzalez-small.jpg");
-		justify-content: flex-end;
-		flex-direction: column;
-	}
-
-	.contact__container {
-		align-items: flex-end;
-		margin-left: auto;
-		margin-top: auto;
-		margin-bottom: auto;
-	}
-	
-	.contact__container a {
-		flex-direction: row-reverse;
 	}
 
 	.contact__cta {
-		/* background-color: var(--primary-color); */
 		position: relative;
 		left: 0;
 		font-size: 2.5rem;
 		max-width: 100%;
+		margin: 0;
+		padding: 5px;
 	}
 
 	.contact__cta p:last-child {
@@ -945,22 +801,11 @@ footer .navbar {
 }
 
 @media screen and (max-width: 960px) and (orientation: landscape) {
-	.fa {
-		font-size: 5vh;
-		width: 10vh;
-		height: 10vh;
-	}
-	
 	.contact {
 		flex-wrap: wrap;
 	}
 
-	.contact__container {
-		order: 2;
-	}
-	
 	.contact__cta {
-		order: 1;
 		margin-top: auto;
 		margin-bottom: auto;
 		max-width: 60vw;
@@ -970,6 +815,11 @@ footer .navbar {
 		font-size: 1rem;
 	}
 }
+
+/* ******************************* */
+/* ********** ANIMATIONS ********* */
+/* ******************************* */
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
