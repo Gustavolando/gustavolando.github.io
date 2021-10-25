@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Puppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--primary-color: #14103b;
+	--secundary-color:  #6789ba;
+	--highlight-color: #f02a71;
+	--light-color: #7ec0e4;
+	--light-color-span: #d7f1ff;
+	--font-size: 1.8rem;
+}
+
+.testimonials {
+  font-family: 'Puppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: calc(100vh - 90px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+  filter: blur(4px);
+  background: #d1ebff90;
+  border-radius: 10px;
+}
+
+.swiper-slide-active {
+  background: var(--light-color-span);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top, .swiper-3d .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.testimonialSlide {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  padding-top: 70px;
+}
+.testimonialSlide .quote {
+  position: absolute;
+  width: 15%;
+  top: 20px;
+  right: 30px;
+  opacity: 1;
+}
+.testimonialSlide .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.testimonialSlide .details .imgBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.testimonialSlide .details .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonialSlide .details h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  line-height: 1.1em;
+}
+.testimonialSlide .details h3 span { 
+  font-size: 12px;
+  color: var(--secundary-color);
+}
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
