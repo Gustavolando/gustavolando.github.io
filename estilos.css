@@ -17,7 +17,6 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
-	width: 100vw;
 }
 
 a {
@@ -30,7 +29,7 @@ a:hover {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	font-size: var(--font-size);
 	background: var(--primary-color);
 }
@@ -43,6 +42,7 @@ body {
 	background: var(--primary-color);
 	position: sticky;
 	top: 0;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -101,13 +101,10 @@ body {
 /* * ============================== */
 /* * ===== CONTENEDOR COVER ======= */
 /* * ============================== */
-.cover .cover__desc h2 {
-  position: relative;
-  z-index: 10;
-}
 
 .cover {
   height: calc(100vh - 3.8rem);	
+	width: 100%;
 	display: flex;
 	background-image: url("https://i.ibb.co/d5tz7TZ/ing-gustavo-gonzalez-color-big.jpg");
 	background-repeat: no-repeat;
@@ -133,6 +130,7 @@ body {
   overflow: hidden;
   border-radius: 20px;
 }
+
 .cover .cover__desc::before {
 	content: '';
   position: absolute;
@@ -143,12 +141,18 @@ body {
   background: linear-gradient(to right, var(--light-color), var(--light-color), var(--highlight-color), var(--highlight-color));
   animation: animate 10s linear infinite;
 }
+
 .cover .cover__desc::after {
   content: '';
   position: absolute;
   background: var(--primary-color);
   inset: 4px;
   border-radius: 16px;
+}
+
+.cover .cover__desc h2 {
+  position: relative;
+  z-index: 10;
 }
 
 .cover .cover__desc-engineer {
@@ -190,6 +194,7 @@ body {
 
 .about {
 	height: 100vh;
+	width: 100%;
 	background-image: url('https://i.ibb.co/BNC31HL/about-ing-gustavo-gonzalez-big.jpg');
 	background-size: cover;
 	background-position-y: bottom;
@@ -212,6 +217,7 @@ body {
 	font-size: 1.2rem;
 	overflow: hidden;
 }
+
 .about__desciption::before {
 	content: '';
   position: absolute;
@@ -223,6 +229,7 @@ body {
   animation: animate 10s linear infinite;
 	z-index: 0;
 }
+
 .about__desciption::after {
 	content: '';
   position: absolute;
@@ -251,7 +258,6 @@ body {
 
 .work {
 	max-width: 1200px;
-	width: 100%;
 	margin: auto;
 	display: flex;
 }
@@ -540,18 +546,18 @@ main {
 
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar {
-	width: 0px;
+	width: 20px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar:hover {
 	background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar:hover:active {
