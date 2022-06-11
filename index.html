@@ -677,16 +677,6 @@
 					<p>Feel free to contact me at any of my networks</p>
 				</div>
 				<ul class="sci">
-					<li data-text="email" data-color="#c71610">
-						<a href="mailto:votagus@gmail.com?subject=Hi%20Gustavo&body=Hi%20Gustavo" target="_blank" rel="noopener noreferrer" class="mail">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li data-text="whatsapp" data-color="#25D366">
-						<a href="https://wa.me/50685397667?text=Hi%20Gustavo" target="_blank" rel="noopener noreferrer" class="whatsapp">
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-						</a>
-					</li>
 					<li data-text="telegram" data-color="#0088cc">
 						<a href="https://t.me/inggustavog" target="_blank" rel="noopener noreferrer" class="telegram">
 							<i class="fa fa-telegram" aria-hidden="true"></i>
@@ -712,19 +702,9 @@
 							<i class="fa fa-youtube-play" aria-hidden="true"></i>
 						</a>
 					</li>
-					<li data-text="facebook" data-color="#1877f2">
-						<a href="https://www.facebook.com/vtgus/" target="_blank" rel="noopener noreferrer" class="facebook">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a>
-					</li>
 					<li data-text="instagram" data-color="#e4405f">
 						<a href="https://www.instagram.com/votagustkd/" target="_blank" rel="noopener noreferrer" class="instagram">
 							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li data-text="tiktok" data-color="#000000">
-						<a href="https://www.tiktok.com/@inggustavog" target="_blank" rel="noopener noreferrer" class="tiktok">
-							<i class="fa icon-tiktok"></i>
 						</a>
 					</li>
 				</ul>
@@ -748,9 +728,10 @@
         let color = event.target.getAttribute('data-color')
         let icon = event.target.getAttribute('data-text')
         if (icon === 'instagram') {
-          bg.style = 'background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);'
+          bg.style = 'background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); opacity: 0.85;'
         } else {
           bg.style.background = color
+					bg.style.opacity = 0.85
         }
 				cta.style.opacity = 0
       })
